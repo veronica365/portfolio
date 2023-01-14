@@ -11,6 +11,11 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .wrap {
   display: flex;
   flex-direction: column;
@@ -92,10 +97,7 @@ h1 {
 }
 
 .connect ul {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .connect ul li {
@@ -205,7 +207,7 @@ h1 {
   border: none;
 }
 
-.media-body .read-more a {
+.read-more a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -220,4 +222,91 @@ h1 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+}
+
+.about-me-more{
+  margin-bottom: 3rem;
+}
+
+.about-me-more .connect ul {
+  margin: 0.3rem 0 0.5rem;
+}
+
+.about-me-more .connect ul li{
+  margin-right: 0;
+}
+
+.about-me-more .connect ul li a{
+  display: flex;
+  padding: 8px;
+  width: 30px;
+  height: 40px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.about-me-more .description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-me-more ul li.categories{
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.about-me-more ul li.categories.open{
+  border: none;
+  padding-bottom: 0;
+}
+
+.about-me-more li a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me-more li a span{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+.about-me-more li a span:last-child{
+  display: flex;
+  align-items: center;
+}
+  
+.about-me-more ul li .item-list{
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  gap: 12px;
+}
+
+.about-me-more ul li .item{
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  background: #F7F7F9;
+}
+
+.about-me-more ul li .item .logo{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  margin: 0.5rem 0.8rem;
+}
+
+.about-me-more ul li .item .logo img{
+  width: 100%;
+  height: auto;
+} 
+
+.about-me-more .read-more a {
+ white-space: nowrap;
+ width: 144px;
 }
