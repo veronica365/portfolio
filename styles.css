@@ -7,7 +7,7 @@ body {
   font-style: normal;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #fff;
+  background-color: #F7F7F9;
   font-family: Poppins, sans-serif;
 }
 
@@ -36,6 +36,7 @@ ul {
   background-size: contain;
   margin-left: -1rem;
   margin-right: -1rem;
+  border-bottom-left-radius: 120px;
 }
 
 header.toolbar {
@@ -239,6 +240,7 @@ main section .media-body .description p {
   justify-content: space-between;
 }
 
+.about-me-more .read-more a,
 .media .read-more a {
   display: flex;
   flex-direction: row;
@@ -257,7 +259,11 @@ main section .media-body .description p {
 }
 
 .about-me-more {
-  margin-bottom: 3rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 3rem 1.5rem 4rem;
+  background: #fff;
+  border-top-right-radius: 120px;
 }
 
 .about-me-more .connect ul {
