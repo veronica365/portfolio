@@ -240,24 +240,6 @@ main section .media-body .description p {
   justify-content: space-between;
 }
 
-.media .read-more a:focus,
-.media .read-more a:hover,
-.about-me-more .read-more a:focus,
-.about-me-more .read-more a:hover {
-  color: #fff;
-}
-
-.media .read-more a:hover,
-.about-me-more .read-more a:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
-}
-
-.media .read-more a:focus,
-.about-me-more .read-more a:focus {
-  background: #2230d2;
-}
-
 .about-me-more .read-more a,
 .media .read-more a {
   display: flex;
@@ -341,4 +323,22 @@ main section .media-body .description p {
 .about-me-more ul li .item .logo img {
   width: 100%;
   height: auto;
+}
+
+.media .read-more a:focus,
+.media .read-more a:hover,
+.about-me-more .read-more a:focus,
+.about-me-more .read-more a:hover {
+  color: #fff;
+}
+
+.media .read-more a:hover,
+.about-me-more .read-more a:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+}
+
+.media .read-more a:focus,
+.about-me-more .read-more a:focus {
+  background: #2230d2;
 }
