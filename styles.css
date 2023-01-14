@@ -12,6 +12,16 @@ body {
 .wrap > * {
   flex: 1 1 auto;
 }
+main {
+  display: flex;
+  height: calc(100vh - 64px);
+  align-items: center;
+  background: #fff url("./assets/img/header-shapes\ mobile.svg") no-repeat
+    center center;
+  background-size: contain;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
 header.toolbar {
   display: flex;
   justify-content: space-between;
