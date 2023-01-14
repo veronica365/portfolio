@@ -1,3 +1,33 @@
-h1.header {
-  color: purple;
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.wrap > * {
+  flex: 1 1 auto;
+}
+header.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+  height: 2rem;
+}
+header.toolbar h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #6070ff;
+  text-align: left;
+}
+header.toolbar img {
+  width: 1.875rem;
 }
