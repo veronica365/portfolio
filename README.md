@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Hello Microverse Exercise</b></h3>
+  <h3><b>Portfolio</b></h3>
 
 </div>
 
@@ -19,9 +19,9 @@
 - [👥 Authors](#authors)
 - [📝 License](#license)
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
-**[Hello Microverse]** is an exercise on day two of week one that allows Micronouts to showcase their learning about project documentation, setting up and using project linters
+**[Portfolio]** is an exercise on day three built with HTML and CSS to demostrate the usage of Flexbox, images and backgrounds and Figma
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,15 +37,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Has an HTML file that includes an H1 header with the text "Hello Microverse!"]**
-- **[Has a CSS file that includes one class with styles for the H1 header]**
-- **[Has a rule in the .gitignore to ignore the file and all its contents]**
+- **[Has an a top bar with a hambugger button and My Logo]**
+- **[Has a section that describes details about my name, work and what I can help with]**
+- **[Has a section with link to connect with me via socialmedia]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://veronica365.github.io/hello_microverse/)
+- [Live Demo Link](https://veronica365.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,14 +66,14 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-desired-folder
-  git clone git@github.com:veronica365/hello_microverse.git
+  git clone git@github.com:veronica365/portfolio.git
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-- open the repo folder `hello_microverse`
+- open the repo folder `portfolio`
 - Rightclick on the index.html file and select open in the browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
