@@ -16,6 +16,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -73,6 +74,13 @@ h1 {
   padding: 0 1rem;
 }
 
+.about-me-more .description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 .main section .description p {
   font-size: 16px;
   font-weight: 400;
@@ -103,16 +111,18 @@ h1 {
 .connect ul li {
   margin-right: 1rem;
 }
+
 #works {
   display: grid;
 }
+
 .media {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: 4rem 0;
@@ -127,16 +137,19 @@ h1 {
 }
 
 .media .media-img.img-1 {
-  background: url(./assets/img/portfolio_snapshot-1.svg) no-repeat center center;
+  background: url("./assets/img/portfolio_snapshot-1.svg") no-repeat center center;
 }
+
 .media .media-img.img-2 {
-  background: url(./assets/img/portfolio_snapshot-2.svg) no-repeat center center;
+  background: url("./assets/img/portfolio_snapshot-2.svg") no-repeat center center;
 }
+
 .media .media-img.img-3 {
-  background: url(./assets/img/portfolio_snapshot-3.svg) no-repeat center center;
+  background: url("./assets/img/portfolio_snapshot-3.svg") no-repeat center center;
 }
+
 .media .media-img.img-4 {
-  background: url(./assets/img/portfolio_snapshot-4.svg) no-repeat center center;
+  background: url("./assets/img/portfolio_snapshot-4.svg") no-repeat center center;
 }
 
 .media-body h4 {
@@ -155,12 +168,25 @@ h1 {
   gap: 12px;
   order: 1;
 }
+
+.about-me-more li a span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
 .media-body .role span {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
   display: flex;
+}
+
+.about-me-more li a span:last-child {
+  display: flex;
+  align-items: center;
 }
 
 .media-body .role span:first-child {
@@ -176,7 +202,7 @@ h1 {
   border-radius: 50%;
 }
 
-.media-body .description p {
+main section .media-body .description p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -197,26 +223,32 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
-  color: #6070FF;
+  color: #6070ff;
   letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   border: none;
 }
 
-.read-more a {
+.about-me-more li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.media .read-more a {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 12px;
   width: 104px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
-  color: #396DF2;
+  color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -224,7 +256,7 @@ h1 {
   line-height: 24px;
 }
 
-.about-me-more{
+.about-me-more {
   margin-bottom: 3rem;
 }
 
@@ -232,11 +264,16 @@ h1 {
   margin: 0.3rem 0 0.5rem;
 }
 
-.about-me-more .connect ul li{
+.about-me-more .connect ul li {
   margin-right: 0;
 }
 
-.about-me-more .connect ul li a{
+.about-me-more .read-more a {
+  white-space: nowrap;
+  width: 144px;
+}
+
+.about-me-more .connect ul li a {
   display: flex;
   padding: 8px;
   width: 30px;
@@ -245,68 +282,39 @@ h1 {
   align-items: center;
 }
 
-.about-me-more .description p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
-
-.about-me-more ul li.categories{
+.about-me-more ul li.categories {
   padding: 2rem 1rem;
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
-.about-me-more ul li.categories.open{
+.about-me-more ul li.categories.open {
   border: none;
   padding-bottom: 0;
 }
 
-.about-me-more li a{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-me-more li a span{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000;
-}
-.about-me-more li a span:last-child{
-  display: flex;
-  align-items: center;
-}
-  
-.about-me-more ul li .item-list{
+.about-me-more ul li .item-list {
   display: flex;
   flex-direction: column;
   padding: 12px 0;
   gap: 12px;
 }
 
-.about-me-more ul li .item{
+.about-me-more ul li .item {
   display: flex;
   border-radius: 8px;
   align-items: center;
-  background: #F7F7F9;
+  background: #f7f7f9;
 }
 
-.about-me-more ul li .item .logo{
+.about-me-more ul li .item .logo {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   margin: 0.5rem 0.8rem;
 }
 
-.about-me-more ul li .item .logo img{
+.about-me-more ul li .item .logo img {
   width: 100%;
   height: auto;
-} 
-
-.about-me-more .read-more a {
- white-space: nowrap;
- width: 144px;
 }
