@@ -21,7 +21,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is an exercise on day three built with HTML and CSS to demostrate the usage of Flexbox, images and backgrounds and Figma
+**[Portfolio]** is an exercise on day three to day five built with HTML and CSS to demostrate the usage of Flexbox, images and backgrounds and Figma
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,6 +40,8 @@
 - **[Has an a top bar with a hambugger button and My Logo]**
 - **[Has a section that describes details about my name, work and what I can help with]**
 - **[Has a section with link to connect with me via socialmedia]**
+- **[Has a section with details about my works]**
+- **[Has a section with details of about myself]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
