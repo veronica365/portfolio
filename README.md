@@ -42,6 +42,7 @@
 - **[Has a section with link to connect with me via socialmedia]**
 - **[Has a section with details about my works]**
 - **[Has a section with details of about myself]**
+- **[Has a contact me form with fields to submit and contact me]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
