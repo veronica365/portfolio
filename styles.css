@@ -62,10 +62,6 @@ header.toolbar .container {
   background-color: #fff;
 }
 
-header.toolbar .container a {
-  animation: rotation 1s linear;
-}
-
 .about-me-more li a {
   display: flex;
   align-items: center;
@@ -169,7 +165,8 @@ h1 {
 }
 
 .media-img:hover img {
-  transform: scale(1.1);
+  transform: scale(1.095);
+  transition: transform 500ms;
 }
 
 .media .media-img {
@@ -248,6 +245,11 @@ main section .media-body .description p {
   color: #172b4d;
 }
 
+.contact-me .wrapper p:hover {
+  transform: translate(42px, 0);
+  transition: transform 1s ease;
+}
+
 .media-body .skills {
   display: flex;
   flex-direction: row;
@@ -298,6 +300,10 @@ main section .media-body .description p {
 .about-me-more .read-more a {
   white-space: nowrap;
   width: 165px;
+}
+
+header.toolbar .container > a {
+  animation: 1.5s rotation 500ms ease-in-out;
 }
 
 .about-me-more .connect ul li a {
@@ -427,6 +433,7 @@ main section .media-body .description p {
 .about-me-more .read-more a:focus,
 .about-me-more .read-more a:hover {
   color: #fff;
+  transition: color 500ms ease;
 }
 
 .contact-me form button:hover,
@@ -434,12 +441,14 @@ main section .media-body .description p {
 .about-me-more .read-more a:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  transition: all 500ms ease;
 }
 
 .contact-me form button:focus,
 .media .read-more a:focus,
 .about-me-more .read-more a:focus {
   background: #2230d2;
+  transition: all ease-in-out 500ms;
 }
 
 @media screen and (min-width: 768px) {
