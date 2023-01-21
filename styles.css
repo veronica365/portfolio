@@ -168,6 +168,10 @@ h1 {
   cursor: pointer;
 }
 
+.media-img:hover img {
+  transform: scale(1.1);
+}
+
 .media .media-img {
   display: flex;
   width: 100%;
