@@ -50,6 +50,10 @@
 
 - [Live Demo Link](https://veronica365.github.io/portfolio/)
 
+## 🚀 Project Outline <a name="project-outline"></a>
+
+- [Project Outline Link](https://www.loom.com/share/158018931431454f8353f75a0d628aa1)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
