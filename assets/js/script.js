@@ -16,3 +16,14 @@ function hideNavigationModal() {
   toggleNavigationModal();
   wrap.removeEventListener("click", () => null);
 }
+
+// show or hide the navigation menu on clicking .mobile-nav
+menu.addEventListener("click", function () {
+  this.classList.toggle("open");
+  toggleNavigationModal();
+});
+
+// show or hide the navigation menu on clicking .mobile-nav
+menuButton.addEventListener("click", function () {
+  hideNavigationModal();
+});
