@@ -28,11 +28,12 @@ menuButton.addEventListener("click", function () {
   hideNavigationModal();
 });
 
-// Get all links, click addevent listeners, 
+// Get all links, add click eventlisteners, click on one to scroll correct part of the page into view
 const allLinks = document.querySelectorAll(".menu-item");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     hideNavigationModal();
+    $(link.hash).scrollIntoView({ behavior: "smooth" });
   });
 });
