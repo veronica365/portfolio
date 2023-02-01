@@ -9,8 +9,6 @@ a {
 body {
   margin: 0;
   font-style: normal;
-  padding-left: 1rem;
-  padding-right: 1rem;
   background-color: #f7f7f9;
   font-family: Poppins, sans-serif;
 }
@@ -35,31 +33,38 @@ ul {
   flex: 1 1 auto;
 }
 
+.desktop-bg {
+  padding-top: 25px;
+  background-color: #fff;
+  border-bottom-left-radius: 120px;
+}
+
 .main {
   display: flex;
   height: calc(100vh - 64px);
   align-items: center;
   background: #fff url("./assets/img/header-shapes.svg") no-repeat center center;
   background-size: contain;
-  margin-left: -1rem;
-  margin-right: -1rem;
   border-bottom-left-radius: 120px;
+}
+
+.menu-button {
+  display: none;
 }
 
 header.toolbar,
 header.toolbar .container {
-  margin: 0 -1rem;
   background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 header.toolbar .container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1.5rem 1rem;
-  margin: 0 -1rem;
+  padding: 0 1.5rem;
   align-items: center;
-  height: 4rem;
-  background-color: #fff;
+  height: 5rem;
 }
 
 .about-me-more li a {
@@ -160,7 +165,7 @@ h1 {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin: 4rem 0;
+  margin: 4rem 1.2rem;
   cursor: pointer;
 }
 
@@ -275,8 +280,6 @@ main section .media-body .description p {
 }
 
 .about-me-more {
-  margin-left: -1rem;
-  margin-right: -1rem;
   padding: 3rem 1.5rem 4rem;
   background: #fff;
   border-top-right-radius: 120px;
@@ -355,7 +358,6 @@ header.toolbar .container > a {
 
 #contact-me {
   background-color: #fff;
-  margin: 0 -1rem;
 }
 
 .contact-me {
@@ -451,6 +453,14 @@ header.toolbar .container > a {
   transition: all ease-in-out 500ms;
 }
 
+.contact-me .wrapper .form-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   #works {
     display: unset;
@@ -492,10 +502,6 @@ header.toolbar .container > a {
 
   .desktop-bg {
     padding: 3rem 0 3rem 3rem;
-    background-color: #fff;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    border-bottom-left-radius: 120px;
   }
 
   .main {
@@ -605,11 +611,6 @@ header.toolbar .container > a {
   }
 
   .contact-me .wrapper .form-wrapper {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     max-width: 600px;
     height: 700px;
   }
@@ -640,6 +641,68 @@ header.toolbar .container > a {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap.mobile-menu-open {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  header.toolbar .container nav {
+    display: flex;
+    width: 32px;
+    align-items: center;
+  }
+
+  .mobile-menu-open header.toolbar .container nav {
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-menu-open header.toolbar.open .container {
+    background-color: unset;
+  }
+
+  .mobile-menu-open header.toolbar.open nav > ul li a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    height: 60px;
+    display: block;
+  }
+
+  .mobile-menu-open header.toolbar.open .container > a {
+    display: none;
+  }
+
+  .mobile-menu-open header.toolbar.open {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 120px 24px;
+    backdrop-filter: blur(8px);
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+  }
+
+  .mobile-menu-open header.toolbar.open nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-open .menu-button {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: -90px;
+  }
+
+  .mobile-menu-open .menu-button img {
+    height: 14px;
+    width: 14px;
   }
 }
 
