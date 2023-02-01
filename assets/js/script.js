@@ -27,3 +27,12 @@ menu.addEventListener("click", function () {
 menuButton.addEventListener("click", function () {
   hideNavigationModal();
 });
+
+// Get all links, click addevent listeners, 
+const allLinks = document.querySelectorAll(".menu-item");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    hideNavigationModal();
+  });
+});
