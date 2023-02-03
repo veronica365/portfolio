@@ -200,3 +200,50 @@ allLinks.forEach((link) => {
     $(link.hash).scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+/**
+ * Below are scripts to validate the form before submitting
+ */
+const contactForm = $('#contact-me form');
+const formMessage = $('#form-message');
+const setFormMessage = (message) => {
+  formMessage.innerText = message;
+  if (!formMessage.matches('.form-message')) {
+    formMessage.classList.add('form-message');
+  }
+};
+
+$('#contact-me form button').removeAttribute('disabled');
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let error = '';
+  setFormMessage(error);
+  const name = contactForm.elements.name.value.trim();
+  const email = contactForm.elements.email.value.trim();
+  const message = contactForm.elements.message.value.trim();
+  let isValidEmail = false;
+
+  if (!email || !message || !name) {
+    error = 'Error: Ensure that there are no blank fields';
+    return setFormMessage(error);
+  }
+
+  isValidEmail = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/gi.test(
+    email,
+  );
+  if (!isValidEmail) {
+    error = 'Error: Ensure that you have typed the correct email';
+    return setFormMessage(error);
+  }
+
+  if (email !== String(email).toLowerCase()) {
+    error = 'Error: Ensure that the email is typed in lowercase';
+    return setFormMessage(error);
+  }
+  // This line is used to prevent multiple submitts as the previous submit
+  // is still being processed
+  $('#contact-me form button').setAttribute('disabled', '');
+  contactForm.submit();
+  formMessage.classList.remove('form-message');
+  return true;
+});

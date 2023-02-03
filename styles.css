@@ -103,6 +103,19 @@ header.toolbar img {
   width: 1.875rem;
 }
 
+small {
+  display: none;
+}
+
+small.form-message {
+  display: flex;
+  color: #f00;
+  margin-bottom: 1rem;
+  justify-content: center;
+  background-color: #ebe7e0;
+  padding: 12px 0;
+}
+
 h1 {
   color: #172b4d;
   font-size: 40px;
@@ -485,6 +498,11 @@ header.toolbar .container > a {
 .about-me-more .read-more a:focus {
   background: #2230d2;
   transition: all ease-in-out 500ms;
+}
+
+.contact-me form button:disabled {
+  color: #5e6c84;
+  background-color: #e5e5e5;
 }
 
 .contact-me .wrapper .form-wrapper {
