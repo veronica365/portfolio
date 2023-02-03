@@ -17,6 +17,7 @@
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
 - [📝 License](#license)
 
 # 📖 [Portfolio] <a name="about-project"></a>
@@ -90,7 +91,25 @@ To run the project, execute the following command:
 👤 **Author1**
 
 - GitHub: [@verocnica365](https://github.com/verocnica365)
-- Twitter: [@ssewilliam](https://twitter.com/ssewilliam)
+
+👤 **Author2**
+
+- GitHub: [@Luchy-B](https://github.com/Luchy-B)
+
+👤 **Author3**
+
+- GitHub: [@ybadr99](https://github.com/ybadr99)
+
+👤 **Author4**
+
+- GitHub: [@arnold-O](https://github.com/arnold-O)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
