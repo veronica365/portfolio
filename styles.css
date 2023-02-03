@@ -372,12 +372,12 @@ header.toolbar .container > a {
   margin-right: 0.8rem;
 }
 
-.modal-content .media-img:hover img {
-  transform: unset;
-}
-
 .modal-content .read-more a img {
   width: 20px;
+}
+
+.modal-content .media-img:hover img {
+  transform: unset;
 }
 
 .modal-content .media-body .article-header span img {
@@ -766,10 +766,9 @@ header.toolbar .container > a {
     color: #253858;
   }
 
-  .modal-content .project-data{
+  .modal-content .project-data {
     flex-direction: row;
   }
-
 }
 
 @media screen and (max-width: 767px) {
