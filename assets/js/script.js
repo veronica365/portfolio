@@ -100,6 +100,65 @@ const works = $('#works').getElementsByClassName('content')?.[0];
 works.innerHTML = `${generateWorkProjects(allProjectsArray)}`;
 
 /**
+ * Below are scripts to show the details popup modal
+ */
+
+const generateModal = (work) => `
+    <div class="modal-content">
+      <div class="media-body">
+        <div class="article-header">
+          <h4>${work.title}</h4>
+          <span class="close-button">
+            <img src="./assets/img/close-icon-2.png" alt="close icon" width="12" height="12" /></span>
+        </div>
+        <div class="role">
+          <span>${work.company}</span>
+          <i></i>
+          <span>${work.role}</span>
+          <i></i>
+          <span>${work.year}</span>
+        </div>
+      </div>
+      <div class="media-img">
+        <img src=${work.image} alt=${work.altText} />
+      </div>
+      <div class="project-data">
+        <p class="description">${work.description}</p>
+        <div>
+          <div class="skills">
+            ${generateWorkSkils(work.skills, 'span')}
+          </div>
+          <div class="read-more">
+            <a href="#">
+              See live <img src="./assets/img/Icon-Export.svg" width="24" height="24" alt="Live demo dutton" />
+            </a>
+            <a href="#">
+              See Source <img src="./assets/img/Icon-GitHub.png" width="24" height="24" alt="Live demo dutton" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+const readMoreLinks = document.querySelectorAll('.read-more-link');
+readMoreLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const workId = event.target.getAttribute('data-project-id');
+    const project = allProjectsArray.find(({ id }) => String(id) === workId);
+    const modal = document.createElement('div');
+    modal.id = 'modal';
+    modal.className = 'modal';
+    modal.innerHTML = generateModal(project);
+    document.body.appendChild(modal);
+    $('.article-header .close-button')?.addEventListener('click', () => {
+      $('#modal').remove();
+    });
+  });
+});
+
+/**
  * Below are scripts to show the mobile menu onclicking the hamburger button
  */
 
