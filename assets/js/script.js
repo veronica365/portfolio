@@ -218,9 +218,9 @@ contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   let error = '';
   setFormMessage(error);
-  const name = contactForm.elements.name.value;
-  const email = contactForm.elements.email.value;
-  const message = contactForm.elements.message.value;
+  const name = contactForm.elements.name.value.trim();
+  const email = contactForm.elements.email.value.trim();
+  const message = contactForm.elements.message.value.trim();
   let isValidEmail = false;
 
   if (!email || !message || !name) {
