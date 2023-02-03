@@ -202,6 +202,36 @@ allLinks.forEach((link) => {
 });
 
 /**
+ * Below are scripts to save and populate the form data
+ */
+const getSavedFormData = () => {
+  const data = localStorage.getItem('formData');
+  if (data) return JSON.parse(data);
+  return {};
+};
+
+function saveFormData(newFormData) {
+  let data = getSavedFormData();
+  data = JSON.stringify({ ...data, ...newFormData });
+  localStorage.setItem('formData', data);
+}
+
+const formData = getSavedFormData();
+const fullName = $('#name');
+const email = $('#email');
+const message = $('#message');
+
+fullName.value = formData.name || '';
+email.value = formData.email || '';
+message.value = formData.message || '';
+
+[fullName, email, message].forEach((input) => {
+  input.addEventListener('change', () => {
+    saveFormData({ [input.name]: input.value });
+  });
+});
+
+/**
  * Below are scripts to validate the form before submitting
  */
 const contactForm = $('#contact-me form');
