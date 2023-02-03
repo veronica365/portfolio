@@ -200,3 +200,32 @@ allLinks.forEach((link) => {
     $(link.hash).scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+/**
+ * Below are scripts to validate the form before submitting
+ */
+const contactForm = $('#contact-me form');
+const formMessage = $('#form-message');
+const setFormMessage = (message) => {
+  formMessage.innerText = message;
+};
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let error = '';
+  const name = contactForm.elements.name.value;
+  const email = contactForm.elements.email.value;
+  const message = contactForm.elements.message.value;
+
+  if (!email || !message || !name) {
+    error = 'Error: Ensure that there are no blank fields';
+    return setFormMessage(error);
+  }
+
+  if (email !== String(email).toLowerCase()) {
+    error = 'Error: Ensure that the email is typed in lowercase';
+    return setFormMessage(error);
+  }
+  contactForm.submit();
+  return true;
+});
