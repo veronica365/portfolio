@@ -270,6 +270,7 @@ contactForm.addEventListener('submit', (event) => {
     error = 'Error: Ensure that the email is typed in lowercase';
     return setFormMessage(error);
   }
+  saveFormData({ fullName: name, email, message });
   // This line is used to prevent multiple submitts as the previous submit
   // is still being processed
   $('#contact-me form button').setAttribute('disabled', '');
