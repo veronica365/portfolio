@@ -62,6 +62,7 @@ main {
   margin-top: 0;
   padding: 6px 12px;
   position: fixed;
+  z-index: 10002;
   animation: show-toast 1s, hide-toast 1s;
   animation-delay: 0s, 3s;
   animation-fill-mode: forwards;
@@ -76,6 +77,7 @@ header.toolbar .container {
   background-color: #fff;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 header.toolbar .container {
@@ -389,6 +391,16 @@ main section .media-body .description p {
 }
 
 header.toolbar .container > a {
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18 34 177);
   animation: 1.5s rotation 500ms ease-in-out;
 }
 
@@ -402,11 +414,15 @@ header.toolbar .container > a {
 }
 
 .about-me-more ul li.categories {
-  padding: 2rem 1rem;
+  height: 0;
+  overflow: hidden;
+  margin: 1rem 0;
+  min-height: 2.4rem;
   border-bottom: 1px solid #dfe1e6;
 }
 
 .about-me-more ul li.categories.open {
+  height: 100%;
   border: none;
   padding-bottom: 0;
 }
@@ -450,6 +466,10 @@ header.toolbar .container > a {
 .about-me-more ul li .item .logo img {
   width: 100%;
   height: auto;
+}
+
+.about-me-more ul li.categories.open span img {
+  transform: rotate(90deg);
 }
 
 #contact-me {
@@ -580,6 +600,7 @@ header.toolbar .container > a {
 }
 
 .modal-content {
+  max-width: 830px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -649,6 +670,11 @@ header.toolbar .container > a {
 
 .modal-content .read-more a:first-child {
   margin-right: 0.8rem;
+}
+
+.about-me-more .content {
+  width: 100%;
+  padding: 10px;
 }
 
 @media screen and (width >= 768px) {
@@ -762,10 +788,8 @@ header.toolbar .container > a {
 
   .about-me-more .content {
     display: grid;
-    width: 100%;
     grid-template-columns: auto auto;
     gap: 10px;
-    padding: 10px;
   }
 
   .about-me-more .content > div {
@@ -897,6 +921,19 @@ header.toolbar .container > a {
   .mobile-menu-open .menu-button img {
     height: 14px;
     width: 14px;
+  }
+
+  .about-me-more .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .about-me-more ul li.categories,
+  .about-me-more ul li.categories.open {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
