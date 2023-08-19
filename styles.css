@@ -24,7 +24,12 @@ ul {
   padding: 0;
 }
 
+main {
+  position: relative;
+}
+
 .wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -46,6 +51,20 @@ ul {
   background: #fff url("./assets/img/header-shapes.svg") no-repeat center center;
   background-size: contain;
   border-bottom-left-radius: 120px;
+}
+
+.message-toast {
+  min-height: 60px;
+  min-width: 260px;
+  right: 15px;
+  top: 15px;
+  border-radius: 8px;
+  margin-top: 0px;
+  padding: 6px 12px;
+  position: fixed;
+  animation: showToast 1s, hideToast 1s;
+  animation-delay: 0s, 3s;
+  animation-fill-mode: forwards;
 }
 
 .menu-button {
@@ -71,6 +90,37 @@ header.toolbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.message-toast.success {
+  background-color: #4caf50;
+}
+
+.message-toast.error {
+  background-color: #af4c4c;
+}
+
+.message-toast.error,
+.message-toast.success {
+  padding: 10px;
+  color: #fff;
+}
+
+.message-toast h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.message-toast p,
+.message-toast h5 {
+  margin: 0;
+}
+
+.message-toast p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .about-me-more .read-more a,
@@ -857,5 +907,25 @@ header.toolbar .container > a {
 
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes showToast {
+  from {
+    opacity: 0;
+    margin-top: -400px;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes hideToast {
+  from {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    margin-top: -400px;
   }
 }
