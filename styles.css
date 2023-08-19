@@ -59,10 +59,10 @@ main {
   right: 15px;
   top: 15px;
   border-radius: 8px;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 6px 12px;
   position: fixed;
-  animation: showToast 1s, hideToast 1s;
+  animation: show-toast 1s, hide-toast 1s;
   animation-delay: 0s, 3s;
   animation-fill-mode: forwards;
 }
@@ -651,7 +651,7 @@ header.toolbar .container > a {
   margin-right: 0.8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
   #works {
     display: unset;
   }
@@ -838,7 +838,7 @@ header.toolbar .container > a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .wrap.mobile-menu-open {
     overflow: hidden;
     height: 100vh;
@@ -909,21 +909,25 @@ header.toolbar .container > a {
     transform: rotate(360deg);
   }
 }
-@keyframes showToast {
+
+@keyframes show-toast {
   from {
     opacity: 0;
     margin-top: -400px;
   }
+
   to {
-    margin-top: 0px;
+    margin-top: 0;
     opacity: 1;
   }
 }
-@keyframes hideToast {
+
+@keyframes hide-toast {
   from {
-    margin-top: 0px;
+    margin-top: 0;
     opacity: 1;
   }
+
   to {
     opacity: 0;
     margin-top: -400px;
