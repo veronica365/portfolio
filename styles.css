@@ -400,7 +400,7 @@ header.toolbar .container > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(18 34 177);
+  background-color: #1222b1;
   animation: 1.5s rotation 500ms ease-in-out;
 }
 
