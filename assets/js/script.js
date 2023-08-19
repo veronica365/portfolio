@@ -7,51 +7,114 @@ const $ = (elementOrClass) => document.querySelector(elementOrClass);
 const allProjectsArray = [
   {
     id: 1,
-    title: 'Tonic',
-    image: './assets/img/portfolio-1.svg',
+    title: 'The CycleCruise App',
+    image: './assets/img/cruise-moto.png',
     altText: 'project image',
-    company: 'CANOPY',
-    role: 'Backend Dev',
-    year: 2015,
+    company: 'Microverse',
+    role: 'Fullstack Dev',
+    year: 2023,
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    skills: ['html', 'css', 'javascript'],
+      'The CycleCruise project was based on an app to book an appointment to try a motorcycle. It followed the given design of the website, but we personalized the content to suite our needs. We built an app to reserve a test drive for a motor cycle.',
+    skills: ['React', 'Rails', 'PostgreSQL'],
+    demoLink: 'https://thecyclecruise.onrender.com',
+    sourceLink: 'https://github.com/c00p75/appointment-app-backend',
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    image: './assets/img/portfolio-2.svg',
+    title: 'Recipe app',
+    image: './assets/img/recipes-app.png',
     altText: 'project image',
-    company: 'CANOPY',
-    role: 'Backend Dev',
-    year: 2015,
+    company: 'Microverse',
+    role: 'Fullstack Dev',
+    year: 2023,
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    skills: ['html', 'css', 'javascript'],
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    skills: ['Rails', 'PostgreSQL', 'JavaScript'],
+    sourceLink: 'https://github.com/veronica365/recepies-app',
   },
   {
     id: 3,
-    title: 'Tonic',
-    image: './assets/img/portfolio-3.svg',
+    title: 'Budget Buddy',
+    image: './assets/img/buddget-buddy.png',
     altText: 'project image',
-    company: 'CANOPY',
-    role: 'Backend Dev',
-    year: 2015,
+    company: 'Microverse',
+    role: 'Fullstack Dev',
+    year: 2023,
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    skills: ['html', 'css', 'javascript'],
+      'Budget Buddy is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    skills: ['Rails', 'PostgreSQL', 'JavaScript'],
+    demoLink: 'https://budget-buddy-v9u9.onrender.com',
+    sourceLink: 'https://github.com/veronica365/budget-buddy',
   },
   {
     id: 4,
-    title: 'Multi-Post Stories',
-    image: './assets/img/portfolio-4.svg',
+    title: 'Rails blog',
+    image: './assets/img/rails-blog.png',
     altText: 'project image',
-    company: 'CANOPY',
-    role: 'Backend Dev',
-    year: 2015,
+    company: 'Microverse',
+    role: 'Fullstack Dev',
+    year: 2023,
+    description: `The Blog app will be a classic example of a blog website. The web app that features authentication and lets the admin create stories, delete, edit, comment and like a post while a user can view, comment and like a given post.
+       You will create It'a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.`,
+    skills: ['Rails', 'PostgreSQL', 'JavaScript'],
+    // demoLink: "https://github.com/veronica365/rails-blog",
+    sourceLink: 'https://github.com/veronica365/rails-blog',
+  },
+  {
+    id: 5,
+    title: 'BookStore CMS',
+    image: './assets/img/bookstore.png',
+    altText: 'project image',
+    company: 'Microverse',
+    role: 'Frontent Dev',
+    year: 2023,
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    skills: ['html', 'css', 'javascript'],
+      'The Bookstore is a website similar to the Awesome Books website that allows users to display a list of books, add a book, remove a selected book. The application will be built using React and Redux in the context of a real application.',
+    skills: ['React', 'Redux', 'JavaScript'],
+    demoLink: 'https://boosktore-react.onrender.com/',
+    sourceLink: 'https://github.com/veronica365/boostore-react',
+  },
+  {
+    id: 6,
+    title: 'Countries data',
+    image: './assets/img/countries.png',
+    altText: 'project image',
+    company: 'Microverse',
+    role: 'Frontent Dev',
+    year: 2023,
+    description:
+      'Countries data is a React capstone project about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux',
+    skills: ['React', 'Redux', 'JavaScript'],
+    demoLink: 'https://countries-data-4ptm.onrender.com',
+    sourceLink: 'https://github.com/veronica365/countries-data',
+  },
+  {
+    id: 7,
+    title: 'My portfolio',
+    image: './assets/img/portfolio.png',
+    altText: 'project image',
+    company: 'Microverse',
+    role: 'Frontent Dev',
+    year: 2023,
+    description:
+      'A basic portfolio website that show more details about my profile and projects that I have worked on. And how to reach out me in case you need my services',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+    demoLink: 'https://veronica365.github.io/portfolio',
+    sourceLink: 'https://github.com/veronica365/portfolio',
+  },
+  {
+    id: 8,
+    title: 'Magic magicians',
+    image: './assets/img/math-magic.png',
+    altText: 'project image',
+    company: 'Microverse',
+    role: 'Frontent Dev',
+    year: 2023,
+    description:
+      'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
+    skills: ['React', 'HTML', 'CSS', 'JavaScript'],
+    demoLink: 'https://countries-data-4ptm.onrender.com',
+    sourceLink: 'https://github.com/c00p75/appointment-app-backend',
   },
 ];
 
@@ -86,7 +149,9 @@ const generateWorkProjects = (works) => {
       ${generateWorkSkils(project.skills, 'li')}
       </ul>
       <div class="read-more">
-        <a href="#" class="read-more-link" data-project-id="${
+        <a href="${
+  project.demoLink
+}" target="_blank" rel="noopener noreferrer" class="read-more-link" data-project-id="${
   project.id
 }"> See Project </a>
       </div>
@@ -96,8 +161,8 @@ const generateWorkProjects = (works) => {
   return innerHTML;
 };
 
-const works = $('#works').getElementsByClassName('content')?.[0];
-works.innerHTML = `${generateWorkProjects(allProjectsArray)}`;
+const works = $('#projects')?.getElementsByClassName('content')?.[0];
+if (works) works.innerHTML = `${generateWorkProjects(allProjectsArray)}`;
 const formButton = $('#contact-me form button');
 
 /**
@@ -130,11 +195,23 @@ const generateModal = (work) => `
             ${generateWorkSkils(work.skills, 'span')}
           </div>
           <div class="read-more">
-            <a href="#">
-              See live <img src="./assets/img/Icon-Export.svg" width="24" height="24" alt="Live demo dutton" />
-            </a>
-            <a href="#">
-              See Source <img src="./assets/img/Icon-GitHub.png" width="24" height="24" alt="Live demo dutton" />
+            ${
+  (work.demoLink
+                && `<a href="${work.demoLink}" target="_blank" rel="noopener noreferrer">
+                Demo
+                <img
+                  src="./assets/img/Icon-Export.svg"
+                  width="24"
+                  height="24"
+                  alt="Live demo dutton"
+                />
+              </a>`)
+              || ''
+}
+            <a href="${
+  work.sourceLink
+}" target="_blank" rel="noopener noreferrer">
+              Source <img src="./assets/img/Icon-GitHub.png" width="24" height="24" alt="Live demo dutton" />
             </a>
           </div>
         </div>
@@ -201,6 +278,7 @@ readMoreLinks.forEach((link) => {
 const menu = $('.mobile-nav');
 const wrap = $('.wrap');
 const menuButton = $('.menu-button');
+const skills = document.querySelectorAll('.about-me-more ul li.categories a');
 
 // Used to show or hide navigation modal
 function toggleNavigationModal() {
@@ -234,6 +312,13 @@ allLinks.forEach((link) => {
     event.preventDefault();
     hideNavigationModal();
     $(link.hash).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+skills.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    link.parentElement.classList.toggle('open');
   });
 });
 
@@ -285,7 +370,7 @@ const setFormMessage = (message) => {
   }
 };
 
-contactForm.addEventListener('submit', async (event) => {
+contactForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
   let error = '';
   setFormMessage(error);
